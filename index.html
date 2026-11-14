@@ -52,7 +52,19 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.04);
             margin-bottom: 24px;
             border: 1px solid rgba(226, 232, 240, 0.8);
+            text-align: center;
         }
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 4px;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899, #3b82f6);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+            margin: 0 auto 20px auto;
+            display: block;
+            }
         .badge {
             display: inline-flex;
             align-items: center;
@@ -75,7 +87,7 @@
             color: #0f172a;
             margin-bottom: 10px;
             font-weight: 700;
-            }
+        }
         h1 span {
             background: linear-gradient(45deg, #8b5cf6, #ec4899);
             -webkit-background-clip: text;
@@ -108,6 +120,7 @@
             gap: 12px;
             margin-bottom: 35px;
             flex-wrap: wrap;
+            justify-content: center;
         }
         .btn-primary {
             background: linear-gradient(135deg, #8b5cf6, #ec4899);
@@ -120,7 +133,7 @@
             box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
             text-align: center;
             flex: 1;
-        }
+            }
         .btn-secondary {
             background: #f1f5f9;
             color: #334155;
@@ -156,7 +169,8 @@
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 15px;
-            }
+            justify-content: center;
+        }
         .tag {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
@@ -181,7 +195,7 @@
             color: #64748b;
             font-size: 0.9rem;
             margin-bottom: 15px;
-        }
+            }
     </style>
 </head>
 <body>
@@ -191,8 +205,9 @@
     </header>
 
     <div class="container" id="home">
-        <!-- Hero Card -->
+        <!-- Hero Card with Profile Picture -->
         <div class="card">
+            <img src="IMG_20260624_163912_794~2.jpg" alt="Marjorie Aspa" class="profile-pic">
             <div class="badge">
                 <span class="dot"></span> Third-year BSIT student
             </div>
@@ -220,23 +235,23 @@
                 </div>
             </div>
         </div>
+
         <!-- About Card -->
-        <div class="card" id="about">
+        <div class="card" id="about" style="text-align: left;">
             <h2 class="section-title">Curious by nature. <span>Driven to create.</span></h2>
             <p class="subtitle" style="font-size: 0.9rem; margin-bottom: 15px;">ABOUT ME</p>
             <p class="bio">
                 Hello! I'm Marjorie Aspa, a third-year Bachelor of Science in Information Technology student. I'm passionate about programming, building websites, and understanding how technology makes everyday life easier. Through my coursework and personal practice, I keep sharpening my skills in web development, problem-solving, and system design. My goal is to grow into a skilled IT professional who creates digital solutions that are useful, accessible, and a joy to use.
             </p>
         </div>
-
         <!-- Skills Card -->
-        <div class="card" id="skills">
+        <div class="card" id="skills" style="text-align: left;">
             <h2 class="section-title">My growing <span>toolkit</span></h2>
             <p class="subtitle" style="font-size: 0.9rem; margin-bottom: 15px;">SKILLS</p>
             <p class="bio">Technologies and strengths I use and keep improving as an IT student.</p>
             
             <h3 style="font-size: 1rem; color: #0f172a; margin-top: 15px;">Web Development</h3>
-            <div class="tags-container">
+            <div class="tags-container" style="justify-content: flex-start;">
                 <span class="tag">HTML5</span>
                 <span class="tag">CSS3</span>
                 <span class="tag">JavaScript</span>
@@ -244,7 +259,7 @@
             </div>
 
             <h3 style="font-size: 1rem; color: #0f172a; margin-top: 20px;">Programming & Basics</h3>
-            <div class="tags-container">
+            <div class="tags-container" style="justify-content: flex-start;">
                 <span class="tag">Problem solving</span>
                 <span class="tag">Debugging</span>
                 <span class="tag">OOP basics</span>
@@ -252,7 +267,7 @@
         </div>
 
         <!-- Projects Card -->
-        <div class="card" id="projects">
+        <div class="card" id="projects" style="text-align: left;">
             <h2 class="section-title">Try the <span>systems I built</span></h2>
             <p class="subtitle" style="font-size: 0.9rem; margin-bottom: 15px;">PROJECTS</p>
             <p class="bio">Working mini systems built right into my portfolio. Fully responsive and interactive.</p>
@@ -265,7 +280,7 @@
         </div>
 
         <!-- Contact Card -->
-        <div class="card" id="contact">
+        <div class="card" id="contact" style="text-align: left;">
             <h2 class="section-title">Get in <span>touch</span></h2>
             <p class="subtitle" style="font-size: 0.9rem; margin-bottom: 15px;">CONTACT ME</p>
             <p class="bio">Feel free to reach out for collaborations, questions, or to connect!</p>
